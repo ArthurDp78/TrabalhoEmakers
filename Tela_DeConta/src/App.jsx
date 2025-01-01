@@ -1,20 +1,28 @@
 import { useState } from 'react'
 import './App.css'
+import SearchIcon from '@mui/icons-material/Search';
 
 function App() {
 
   return (
     <div className='container'>
       <div className='navbar'>
-        <div className='imagem'></div>
+        <button className='imagem'></button>
         <div className='barraclicks'>
-          <button className='botaonavbar'>Lancamentos</button>
-          <button className='botaonavbar'>Populares</button>
-          <button className='botaonavbar'>Gêneros</button>
-          <button className='botaonavbar'>Promocoes</button>
-          <button className='botaonavbar'>Conta</button>
+          <a href="/Lancamentos">Lançamentos </a>
+          |
+          <a href="/Populares">Populares</a>
+          |
+          <a href="/Gêneros">Gêneros</a>
+          |
+          <a href="/Promocoes">Promoções</a>
+          |
+          <a href="/Conta">Conta</a>
+          <div className='search'>
+            <input type='search'/>
+            <SearchIcon> </SearchIcon>
+          </div>
         </div>
-        <input type='search' ></input>
       </div>
       <div className='bottom'>
         <div className='parteusuario'></div>

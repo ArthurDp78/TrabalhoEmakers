@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 body{
   margin:0;
   background-color:#FBF8F4;
@@ -13,7 +14,7 @@ font-size: 23px;
 line-height: 29px;
 color: #97A4A2;
 border-color:#EFEFEF;
-
+border: none;
 }
 
 
@@ -58,12 +59,13 @@ gap:15px;
 }
 .confirmar{
 width: 15%;
-height: 40px;
+height: 100%;
 border-color:aliceblue;
-background-image:url(./imgs/Arrow.png);
-background-color:#97A4A2;
-background-size:cover;
-background-position: right;
+border: none;
+}
+.EastIcon{
+  justify-content: right;
+  font-size: large;
 }
 .links {
   display: flex;

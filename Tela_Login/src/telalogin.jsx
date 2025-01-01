@@ -1,5 +1,6 @@
 import React from 'react';
 import './telalogin.css';
+import EastIcon from '@mui/icons-material/East';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         </div>
 
         <div className="Grupo2">
-          <button className="confirmar"></button>
+          <button className="confirmar"><EastIcon></EastIcon></button>
         </div>
 
         <div className="links">
