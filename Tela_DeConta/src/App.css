@@ -7,27 +7,39 @@ body {
 
 .container {
   display: flex;
-  height: 100vh;
   flex-direction: column;
+  height: 100vh;
 }
 
 .navbar {
   height: 8%;
   width: 100%;
   display: flex;
-  justify-content: center; /* Alinha todos os itens ao centro */
+  justify-content: space-between;
   align-items: center;
   background: #FBF6F0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 0 20px;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+  z-index: 5;
+  transition: height 0.3s ease; /* Adicionando transição */
 }
 
-.imagem {
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #4B626C;
+  border-radius: 5px;
+}
+
+.imagembotao {
   width: 40px;
   height: 50px;
   background-image: url('./imgs/imagem2.png');
@@ -35,25 +47,30 @@ body {
   background-size: cover;
   background-position: center;
   border: none;
+  cursor: pointer;
 }
 
 .barraclicks {
   display: flex;
-  justify-content: center; /* Mantém os links centralizados */
-  align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.barraclicks.show {
+  max-height: 300px;
 }
 
 .barraclicks a {
+  position: relative; 
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: 25px;
+  font-size: 20px;
   color: #4B626C;
   text-decoration: none;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-  position: relative;
+  padding-bottom: 5px; 
 }
 
 .barraclicks a:hover {
@@ -64,78 +81,255 @@ body {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -2px;
-  width: 0%;
-  height: 2px;
+  bottom: 0; 
+  width: 100%; 
+  height: 2px; 
   background-color: #000;
-  transition: width 0.3s ease;
+  transform: scaleX(0); 
+  transform-origin: bottom right;
+  transition: transform 0.3s ease; 
 }
 
 .barraclicks a:hover::after {
-  width: 100%;
+  transform: scaleX(1); 
+  transform-origin: bottom left; 
 }
+
+
 
 .search {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center; /* Alinha a busca no centro */
-  height: 20%;
-  width: 15%;
   background: rgba(151, 164, 162, 0.45);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  padding: 5px 15px;
+  padding: 5px 10px;
+  height: 40px;
+  margin-right: 20px;
 }
 
 input {
   background: transparent;
   width: 100%;
   border: none;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .bottom {
-  width: 100%;
-  height: 100%;
   display: flex;
+  flex: 1;
+  margin-top: 8%;
+}
+
+.parteusuario {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.text1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #4B626C;
+}
+
+.text {
+  font-size: 30px;
+  color: #4B626C;
+}
+
+.divlinks {
+  display: flex;
+  align-items:normal;
+  gap:5px;
   flex-direction: column;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* Layout empilhado para telas menores */
-    height: auto;
-    padding: 10px 0;
+.link1{
+  padding: 10px 20px;
+  background: #4B626C;
+  border-radius: 10px;
+  color: #FBF6F0;
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.link2 {
+  padding: 10px 20px;
+  background: #4B626C;
+  border-radius: 10px;
+  color: #FBF6F0;
+  font-size: 18px;
+  opacity: 0.5;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.partejogos {
+  flex: 2;
+  background: #4B626C;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-radius: 2%;
+  color: #FBF6F0;
+}
+
+.text2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.Imagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  width: 100%;
+}
+
+.imagem button {
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.img1 {
+  background-image: url(./imgs/img1.png);
+}
+
+.img2 {
+  background-image: url(./imgs/img2.png);
+}
+
+.img3 {
+  background-image: url(./imgs/img3.png);
+}
+
+.img4 {
+  background-image: url(./imgs/img4.png);
+}
+
+.avaliacoes {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.carrinho{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+    background-color: #4B626C; 
+    color: #fff; 
+    border: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  
+    transition: background-color 0.3s ease; 
+    font-size: large;
   }
 
-  .imagem {
-    margin: 0 auto;
+
+  .carrinho:hover {
+    background-color: #3a4b55; /* Cor do botão quando o mouse passa por cima */
+  }
+ 
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
   }
 
   .barraclicks {
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    gap: 10px;
   }
 
-  .search {
-    width: 60%;
-    margin-top: 10px;
+  .navbar {
+    flex-direction: row;
+    height: auto;
+    padding: 10px 0;
+  }
+  .search{
+    margin-right: 0;
+  }
+
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  .parteusuario {
+    align-items: center;
+    text-align: center;
+  }
+
+  .divlinks {
+    width: 100%;
+  }
+
+  .partejogos {
+    padding: 10px;
+  }
+
+  .Imagens {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   }
 }
 
 @media (max-width: 480px) {
-  .barraclicks a {
-    font-size: 14px;
+  .navbar{
+    flex-direction: column;
+    position: relative;
   }
-
   .search {
-    width: 60%;
+    height: 30px;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   input {
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  .text1 {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .link1, .link2 {
+    font-size: 20px;
+  }
+
+  .text2 {
+    font-size: 18px;
+  }
+  .barraclicks a {
+    font-size: 20px;
+  }
+  .avaliacoes {
+    font-size: 12px;
   }
 }
