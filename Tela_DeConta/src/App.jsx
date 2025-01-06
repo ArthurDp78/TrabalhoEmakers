@@ -18,16 +18,12 @@ function App() {
         <button className="imagembotao"></button>
         <div className={`barraclicks ${isMenuOpen ? "show" : ""}`}>
           <a href="/Lancamentos">Lançamentos</a>
-          |
           <a href="/Populares">Populares</a>
-          |
           <a href="/Gêneros">Gêneros</a>
-          |
           <a href="/Promocoes">Promoções</a>
-          |
           <a href="/Conta">Conta</a>
         </div>
-        <div className="search">
+        <div className={`search ${isMenuOpen ? "hidden" : ""}`}>
           <input type="search" placeholder="Pesquisar..." />
           <SearchIcon />
         </div>
