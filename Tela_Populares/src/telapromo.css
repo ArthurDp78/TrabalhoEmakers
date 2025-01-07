@@ -118,8 +118,8 @@ input {
 }
 
 .middle {
-  width: 100%;
-  height: 100%;
+  width: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,6 +194,7 @@ input {
   display: flex;
   align-items: center;
   flex-direction: column;
+
 }
 
 .texth1img {
@@ -363,26 +364,6 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-@media (max-height:521px){
-  .imgright{
-    padding: 0;
-    height: 100vh;
-  }
-}
-@media (max-height: 768px) {
-  .textpimg {
-    font-size: 10px;
-    line-height: 20px;
-  }
-  .add{
-    font-size: 10px;
-  }
-  .refund{
-    font-size: 10px;
-  }
-}
-
 
 @media (max-width: 768px) {
   .container{

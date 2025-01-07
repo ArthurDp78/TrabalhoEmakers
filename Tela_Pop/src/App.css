@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+body{
+    margin:0;
+}
+.middle{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+
+}
+.container{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.part{
+    display: flex;
+    flex-direction: row;
+    gap:5%;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 10%;
+}
+.partd{
+    display: flex;
+    flex-direction: row-reverse;
+    gap:5%;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 10%; 
+}
+.text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin: 0;
+    color: #4B626C;
+}
+.textt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #4B626C;
+    margin: 0;
+
+}
+.texti{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 44px;
+    color: #4B626C;
+    margin: 20px 0;  
+    letter-spacing: 1px;
+    font-weight:900;
+    margin-bottom: 5%;
+}
+.img{
+    width: 100%;
+  border-radius: 1%;
+  margin-left:20px;
+  margin-top: 20px;
+  
+}
+.textbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.imagecontainer{
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.ball{
+        width: 50px;
+        height: 50px;
+        background-color:#4B626C; /* Cor azul */
+        color: white; /* Cor do texto */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        position: absolute;
+        border-radius: 50%; /* Torna o elemento circular */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+@media(max-width:1024px){
+    .text {
+        font-size: 18px; /* Diminui o tamanho do texto */
+        line-height: 18px;
+    }
+
+
+}
+@media (max-width: 768px) {
+    .middle {
+        flex-direction: column; /* Altera para coluna no mobile */
+        margin: 3%;
+    }
+
+    .text {
+        font-size: 16px; /* Diminui o tamanho do texto */
+        line-height: 20px;
+    }
+
+    .textt {
+        font-size: 24px; /* Texto menor no mobile */
+        line-height: 30px;
+    }
+
+    .texti {
+        font-size: 40px; /* Tamanho ajustado */
+        line-height: 36px;
+    }
+
+    .part, .partd {
+        flex-direction: column; /* Faz os elementos ficarem em coluna */
+        gap: 10px; /* Espaçamento menor entre os elementos */
+        align-items: center;
+    }
+
+    .img {
+        width: 90%; /* Ajusta a largura das imagens */
+        margin: 10px auto; /* Centraliza no mobile */
+    }
+
+    .ball {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 14px; /* Texto ainda menor em dispositivos muito pequenos */
+        line-height: 18px;
+    }
+
+    .textt {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .texti {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .ball {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
