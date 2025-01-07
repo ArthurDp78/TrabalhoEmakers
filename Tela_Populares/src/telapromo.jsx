@@ -37,6 +37,7 @@ function App() {
       <div className='middle'>
         <div className='game'>
           <div className='imggame'>
+            <img src='/src/imgs/imagemprincipal.png' className='godofwar'></img>
             <button className='percent'>-40%</button>
             <button className='price'>R$ 119,95</button>
           </div>
@@ -54,7 +55,6 @@ function App() {
                                     sobreviver... e ensinar 
                                     seu filho a fazer o mesmo.</p>
             </div>
-            <div className='line'></div>
             <button className='add'>Adicionar ao Carrinho<ShoppingCartIcon/></button>
             <button className='refund'>Solicitar Reembolso<ShoppingCartIcon/></button>
           </div>
