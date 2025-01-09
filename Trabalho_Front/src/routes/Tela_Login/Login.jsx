@@ -65,7 +65,7 @@ function Login() {
         </div>
       </div>
       <div className="RetanguloImagem1L">
-        <img src="/src/routes/Tela_Login/imgs/image2.png" className="foto1L" alt="Ilustração" />
+        <img src="/src/imgs/image2.png" className="foto1L" alt="Ilustração" />
       </div>
     </div>
   );

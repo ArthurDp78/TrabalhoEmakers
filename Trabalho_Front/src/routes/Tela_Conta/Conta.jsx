@@ -10,47 +10,49 @@ import Footer from '../../components/footer'
 function Account() {
 
   return (
-    <div className="container">
-      <Navbar></Navbar>
-      <div className="bottom">
-        <div className="parteusuario">
-          <h1 className="text1">Olá, Usuário</h1>
-          <p className="text">Seu email é nomeusuario@email.com</p>
-          <p className="text">Seu CPF é 123.456.789-00</p>
-          <div className="divlinks">
-            <a className="link1">
+  <div>
+    <Navbar></Navbar>
+    <div className="containerC">
+      
+      <div className="bottomC">
+        <div className="parteusuarioC">
+          <h1 className="text1C">Olá, Usuário</h1>
+          <p className="textC">Seu email é nomeusuario@email.com</p>
+          <p className="textC">Seu CPF é 123.456.789-00</p>
+          <div className="divlinksC">
+            <a className="link1C">
               Alterar Dados <EditIcon />
             </a>
-            <a className="link1">
+            <a className="link1C">
               Excluir Conta <DeleteIcon />
             </a>
-            <a className="link2">Tela do Admin</a>
+            <a className="link2C">Tela do Admin</a>
           </div>
         </div>
-        <div className="partejogos">
-          <h2 className="text2">Jogos adquiridos:</h2>
-          <div className="Imagens">
-            <div className="imagem">
-              <button className="img1"></button>
-              <p className="avaliacoes">100/100</p>
+        <div className="partejogosC">
+          <h2 className="text2C">Jogos adquiridos:</h2>
+          <div className="ImagensC">
+            <div className="imagemC">
+              <button className="img1C"></button>
+              <p className="avaliacoesC">100/100</p>
             </div>
-            <div className="imagem">
-              <button className="img2"></button>
-              <p className="avaliacoes">95/100</p>
+            <div className="imagemC">
+              <button className="img2C"></button>
+              <p className="avaliacoesC">95/100</p>
             </div>
-            <div className="imagem">
-              <button className="img3"></button>
-              <p className="avaliacoes">75/100</p>
+            <div className="imagemC">
+              <button className="img3C"></button>
+              <p className="avaliacoesC">75/100</p>
             </div>
-            <div className="imagem">
-              <button className="img4"></button>
-              <p className="avaliacoes">Adicionar Avaliação</p>
+            <div className="imagemC">
+              <button className="img4C"></button>
+              <p className="avaliacoesC">Adicionar Avaliação</p>
             </div>
           </div>
-          <button className='carrinho'><ShoppingCartIcon /></button>
         </div>
       </div>
     </div>
+  </div>
   );
 }
 

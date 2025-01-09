@@ -17,10 +17,10 @@ function Navbar() {
 
       <div className={`barraclicksN ${isMenuOpen ? "show" : ""}`}>
         <a href="/Lancamentos">Lançamentos</a>
-        <a href="/Populares">Populares</a>
+        <a href="/popular">Populares</a>
         <a href="/Generos">Gêneros</a>
         <a href="/Promocoes">Promoções</a>
-        <a href="/Conta">Conta</a>
+        <a href="/account">Conta</a>
       </div>
 
       <div className={`searchN ${isMenuOpen ? "hidden" : ""}`}>

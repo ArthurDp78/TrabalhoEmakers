@@ -1,28 +1,29 @@
 import { useState } from 'react'
 import './Forgot.css'
+import EastIcon from '@mui/icons-material/East';
 
 function Forgot() {
 
   return (
-    <div className="container">
-    <div className="login-container">
-      <div className="Grupo">
-        <h1 className="login">Recuperar Conta</h1>
-        <form className="forms">
+    <div className="containerF">
+    <div className="login-containerF">
+      <div className="GrupoF">
+        <h1 className="loginF">Recuperar Conta</h1>
+        <form className="formsF">
           <input type="email" placeholder="E-mail" ></input>
         </form>
       </div>
 
-      <div className="Grupo2">
-        <button className="confirmar"></button>
+      <div className="Grupo2F">
+        <button className="confirmarF"><EastIcon/></button>
       </div>
 
-      <div className="links">
+      <div className="linksF">
         <a href="/register">Criar Conta</a>
       </div>
     </div>
-    <div className="RetanguloImagem">
-    <img src="/src/routes/Tela_EsqueceuSenha/imgs/image2.png" className="foto" alt="Ilustração" />
+    <div className="RetanguloImagemF">
+    <img src="/src/imgs/image2.png" className="fotoF" alt="Ilustração" />
     </div>
   </div>
     

@@ -1,23 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
-body {
-  margin: 0;
-  background-color: #FBF8F4;
-}
-
-input {
-  background: #EFEFEF;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 100;
-  font-size: 23px;
-  line-height: 29px;
-  color: #97A4A2;
-  border: none;
-  padding: 10px;
-}
 
 .GrupoF {
   width: 390px;
@@ -42,6 +23,20 @@ input {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  input {
+    background: #EFEFEF;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 23px;
+    line-height: 29px;
+    color: #97A4A2;
+    border: none;
+    padding: 10px;
+  }
+  
 }
 
 .Grupo2F {
@@ -55,7 +50,7 @@ input {
   width: 15%;
   height: 100%;
   border: none;
-  background-color: black;
+  background-color:#FBF8F4;
   cursor: pointer;
 }
 

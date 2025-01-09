@@ -15,9 +15,9 @@ const Footer = () => {
       <div className="footer-section">
         <h4>Explorar</h4>
         <div className="content">
-          <a href="#">Início</a>
-          <a href="#">Populares</a>
-          <a href="#">Conta</a>
+          <a href="/">Início</a>
+          <a href="/popular">Populares</a>
+          <a href="/account">Conta</a>
           <p>© 2024 Game Dame | By Emakers Junior</p>
         </div>
       </div>

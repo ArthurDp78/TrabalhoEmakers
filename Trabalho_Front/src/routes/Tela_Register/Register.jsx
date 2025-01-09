@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Register.css'
+import EastIcon from '@mui/icons-material/East';
 
 function Register() {
  
@@ -19,7 +20,7 @@ function Register() {
         </div>
 
         <div className="Grupo2R">
-          <button className="confirmarR"></button>
+          <button className="confirmarR"><EastIcon/></button>
         </div>
 
         <div className="linksR">
@@ -27,7 +28,7 @@ function Register() {
         </div>
       </div>
       <div className="RetanguloImagemR">
-      <img src="/src/routes/Tela_Register/imgs/image2.png" className="foto1R" alt="Ilustração" />
+      <img src="/src/imgs/image2.png" className="fotoR" alt="Ilustração" />
       </div>
     </div>
   )
