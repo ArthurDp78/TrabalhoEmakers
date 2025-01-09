@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+body {
+  margin: 0;
+  background-color: #FBF8F4;
+}
+
+input {
+  background: #EFEFEF;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 23px;
+  line-height: 29px;
+  color: #97A4A2;
+  border: none;
+  padding: 10px;
+}
+
+.GrupoR {
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 35px auto;
+}
+
+.loginR {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 78px;
+  color: #4B626C;
+}
+
+.formsR {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Grupo2R {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:right
+}
+
+.confirmarR {
+  width: 15%;
+  height: 100%;
+  border: none;
+  background-color: #FBF8F4;
+  cursor: pointer;
+}
+
+.linksR {
+  display: flex;
+  flex-direction:column;
+  justify-content: left;
+  gap: 5px;
+  margin: 35px auto;
+}
+
+.linksR a {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  color: #97A4A2;
+  text-decoration: none;
+}
+
+.containerR {
+  display: flex;
+  height: 100vh;
+}
+
+.login-containerR {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.RetanguloImagemR {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.fotoR {
+  width: 100%;
+  object-position: center;
+}
+
+.error-messageR {
+  color: #4B626C;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+/* Ajuste para telas menores */
+@media(max-width: 768px) {
+  .containerR {
+    flex-direction: column;
+  }
+
+  .RetanguloImagemR {
+    order: -1;
+    width: 100%;
+    height: 50%;
+  }
+
+  .fotoR {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .login-containerR {
+    margin-top: 50px;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+  }
+
+  .linksR {
+    margin-bottom: 50px;
+  }
+
+  .GrupoR {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .loginR {
+    font-size: 48px;
+  }
+
+  .formsR input {
+    font-size: 18px;
+  }
+
+  .linksR a {
+    font-size: 18px;
+  }
+
+  .confirmarR {
+    width: 20%;
+  }
+}
+
+/* Ajuste para telas maiores */
+@media(min-width: 1200px) {
+  .login-containerR {
+    width: 50%;
+    padding: 50px; /* Adiciona espaçamento extra ao contêiner */
+  }
+
+  .loginR {
+    font-size: 80px; /* Aumenta o tamanho do título */
+    line-height: 90px;
+  }
+
+  .GrupoR {
+    width: 500px; /* Aumenta a largura do grupo */
+    gap: 30px; /* Espaçamento maior entre os elementos */
+  }
+
+  .formsR input {
+    font-size: 26px; /* Aumenta o tamanho do texto dos campos */
+    padding: 15px; /* Aumenta o padding dos campos */
+  }
+
+  .linksR a {
+    font-size: 28px; /* Aumenta o tamanho dos links */
+  }
+
+  .confirmarR {
+    
+    height: 60px; /* Altura do botão */
+  }
+  .Grupo2R{
+    justify-content: center;
+  }
+  .error-messageR{
+    font-size: 28px;
+  }
+}

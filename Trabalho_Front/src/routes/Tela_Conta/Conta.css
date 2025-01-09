@@ -1,0 +1,240 @@
+
+input {
+  background: transparent;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+}
+
+.bottom {
+  display: flex;
+  flex: 1;
+  margin-top: 5%;
+}
+
+.parteusuario {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.text1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #4B626C;
+}
+
+.text {
+  font-size: 30px;
+  color: #4B626C;
+}
+
+.divlinks {
+  display: flex;
+  align-items:normal;
+  gap:5px;
+  flex-direction: column;
+}
+
+.link1{
+  padding: 10px 20px;
+  background: #4B626C;
+  border-radius: 10px;
+  color: #FBF6F0;
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.link2 {
+  padding: 10px 20px;
+  background: #4B626C;
+  border-radius: 10px;
+  color: #FBF6F0;
+  font-size: 18px;
+  opacity: 0.5;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.partejogos {
+  flex: 2;
+  background: #4B626C;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-radius: 2%;
+  color: #FBF6F0;
+}
+
+.text2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.Imagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  width: 100%;
+}
+
+.imagem button {
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.img1 {
+  background-image: url(./imgs/img1.png);
+}
+
+.img2 {
+  background-image: url(./imgs/img2.png);
+}
+
+.img3 {
+  background-image: url(./imgs/img3.png);
+}
+
+.img4 {
+  background-image: url(./imgs/img4.png);
+}
+
+.avaliacoes {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.carrinho{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+    background-color: #4B626C; 
+    color: #fff; 
+    border: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  
+    transition: background-color 0.3s ease; 
+    font-size: large;
+  }
+
+
+  .carrinho:hover {
+    background-color: #3a4b55; /* Cor do botão quando o mouse passa por cima */
+  }
+ 
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .barraclicks {
+    flex-direction: column;
+    gap: 10px;
+    max-height: 0;
+  }
+  .barraclicks.show {
+    max-height: 300px;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+  }
+  
+  .search{
+    display: none;
+  }
+  .search.hidden{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    width: 80%;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+
+  .parteusuario {
+    align-items: center;
+    text-align: center;
+  }
+
+  .divlinks {
+    width: 100%;
+  }
+
+  .partejogos {
+    padding: 10px;
+  }
+
+  .Imagens {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+  .imagembotao{
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar{
+    flex-direction: column;
+    position: relative;
+  }
+  .search.hidden{
+    width: 80%;
+    height: 5%;
+  }
+  input {
+    font-size: 12px;
+  }
+
+  .text1 {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .link1, .link2 {
+    font-size: 20px;
+  }
+
+  .text2 {
+    font-size: 18px;
+  }
+  .barraclicks a {
+    font-size: 20px;
+  }
+  .avaliacoes {
+    font-size: 12px;
+  }
+}

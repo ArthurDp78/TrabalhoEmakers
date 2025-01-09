@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+body {
+  margin: 0;
+  background-color: #FBF8F4;
+}
+
+input {
+  background: #EFEFEF;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 23px;
+  line-height: 29px;
+  color: #97A4A2;
+  border: none;
+  padding: 10px;
+}
+
+.GrupoF {
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 35px auto;
+}
+
+.loginF {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 78px;
+  color: #4B626C;
+}
+
+.formsF {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Grupo2F {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:right
+}
+
+.confirmarF {
+  width: 15%;
+  height: 100%;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+}
+
+.linksF {
+  display: flex;
+  flex-direction:column;
+  justify-content: left;
+  gap: 5px;
+  margin: 35px auto;
+}
+
+.linksF a {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  color: #97A4A2;
+  text-decoration: none;
+}
+
+.containerF {
+  display: flex;
+  height: 100vh;
+}
+
+.login-containerF {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.RetanguloImagemF {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.fotoF {
+  width: 100%;
+  object-position: center;
+}
+
+.error-messageF {
+  color: #4B626C;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+/* Ajuste para telas menores */
+@media(max-width: 768px) {
+  .containerF {
+    flex-direction: column;
+  }
+
+  .RetanguloImagemF {
+    order: -1;
+    width: 100%;
+    height: 50%;
+  }
+
+  .fotoF {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .login-containerF {
+    margin-top: 50px;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+  }
+
+  .linksF {
+    margin-bottom: 50px;
+  }
+
+  .GrupoF {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .loginF {
+    font-size: 48px;
+  }
+
+  .formsF input {
+    font-size: 18px;
+  }
+
+  .linksF a {
+    font-size: 18px;
+  }
+
+  .confirmarF {
+    width: 20%;
+  }
+}
+
+/* Ajuste para telas maiores */
+@media(min-width: 1200px) {
+  .login-containerF {
+    width: 50%;
+    padding: 50px; /* Adiciona espaçamento extra ao contêiner */
+  }
+
+  .loginF {
+    font-size: 80px; /* Aumenta o tamanho do título */
+    line-height: 90px;
+  }
+
+  .GrupoF {
+    width: 500px; /* Aumenta a largura do grupo */
+    gap: 30px; /* Espaçamento maior entre os elementos */
+  }
+
+  .formsF input {
+    font-size: 26px; /* Aumenta o tamanho do texto dos campos */
+    padding: 15px; /* Aumenta o padding dos campos */
+  }
+
+  .linksF a {
+    font-size: 28px; /* Aumenta o tamanho dos links */
+  }
+
+  .confirmarF {
+    
+    height: 60px; /* Altura do botão */
+  }
+  .Grupo2F{
+    justify-content: center;
+  }
+  .error-messageF{
+    font-size: 28px;
+  }
+}
