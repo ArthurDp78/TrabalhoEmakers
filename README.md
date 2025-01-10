@@ -23,9 +23,6 @@ Utilizando **React** com **JavaScript** e **CSS**, o objetivo principal foi impl
 - **NavBar:**  
   A barra de navegação contém links que direcionam para outras páginas e uma barra de pesquisa, implementada nas páginas `Popular`, `Jogo` e `Account`.
 
-- **Carrossel:**  
-  Desenvolvido para exibir conteúdos de forma interativa e dinâmica.
-
 - **Responsividade:**  
   Todas as telas são totalmente responsivas, funcionando bem em qualquer dispositivo, seja smartphone, tablet ou desktop.
 
