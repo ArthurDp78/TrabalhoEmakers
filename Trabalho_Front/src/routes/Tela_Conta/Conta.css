@@ -7,18 +7,19 @@
 .bottomC {
   display: flex;
   width:100%;
-  height:100vh;
+  height:auto;
   margin-top: 5%;
-
+  overflow-y: auto;
 }
 
 .parteusuarioC {
-  flex: 3;
+  flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   margin:5%;
+  
 }
 
 .text1C {
@@ -30,6 +31,7 @@ font-weight:600;
 line-height: 39px;
 
 color: #4B626C;
+
 }
 
 .textC {
@@ -262,4 +264,3 @@ color:white;
     gap: 25px; /* Maior espaçamento entre as imagens */
   }
 }
-
