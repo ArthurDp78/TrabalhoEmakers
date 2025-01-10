@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom'; 
 import './Login.css';
 import EastIcon from '@mui/icons-material/East';
 
@@ -7,6 +7,7 @@ function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate(); // Hook para redirecionamento
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -22,8 +23,11 @@ function Login() {
     }
 
     setError('');
-    alert('Login realizado com sucesso!');
+    console.log('Login realizado com sucesso!');
     console.log('Dados enviados:', { email, password });
+
+    // Redirecionar após login bem-sucedido
+    navigate('/account'); // Substitua por sua rota de destino
   };
 
   const validateEmail = (email) => {
@@ -50,13 +54,10 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
             />
             {error && <p className="error-messageL">{error}</p>}
+            <div className='Grupo2L'>
+              <button type="submit" className="confirmar1L"><EastIcon fontSize='large' /></button>
+          </div>
           </form>
-        </div>
-
-        <div className="Grupo2L">
-          <button className="confirmar1L" onClick={handleSubmit}>
-            <EastIcon />
-          </button>
         </div>
 
         <div className="links1L">

@@ -1,28 +1,14 @@
 
 
-.GrupoF {
-  width: 390px;
+
+
+.GrupoF{
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
   margin: 35px auto;
-}
-
-.loginF {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 78px;
-  color: #4B626C;
-}
-
-.formsF {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
   input {
     background: #EFEFEF;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
@@ -36,37 +22,53 @@
     border: none;
     padding: 10px;
   }
-  
+}
+
+.loginF{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 78px;
+  color: #4B626C;
+  text-align: center;
+}
+
+.formsF {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .Grupo2F {
   width: 100%;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content:right
+  justify-content:center;
+  align-items:center;
 }
 
 .confirmarF {
   width: 15%;
   height: 100%;
   border: none;
-  background-color:#FBF8F4;
+  background-color: #FBF8F4;
   cursor: pointer;
 }
 
 .linksF {
   display: flex;
   flex-direction:column;
-  justify-content: left;
-  gap: 5px;
-  margin: 35px auto;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .linksF a {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 35px;
   color: #97A4A2;
   text-decoration: none;
@@ -77,8 +79,8 @@
   height: 100vh;
 }
 
-.login-containerF {
-  width: 40%;
+.login-containerF{
+  flex:1;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -86,14 +88,13 @@
 
 .RetanguloImagemF {
   flex: 1;
-  overflow: hidden;
-  position: relative;
   display: flex;
+  height: 100%; /* Garante que a imagem ocupe a altura total da tela */
 }
 
 .fotoF {
   width: 100%;
-  object-position: center;
+  height: 100%; /* Mantém a altura total do contêiner */
 }
 
 .error-messageF {
@@ -103,24 +104,23 @@
 }
 
 /* Ajuste para telas menores */
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
   .containerF {
     flex-direction: column;
   }
 
   .RetanguloImagemF {
-    order: -1;
+    order: -1; /* Move a imagem para o topo no mobile */
     width: 100%;
-    height: 50%;
+    height: 50vh; /* Define altura específica para mobile */
   }
 
   .fotoF {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    height: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
+    object-fit: contain; /* Mostra a imagem inteira no mobile */
+    object-position: center; /* Centraliza a imagem */
   }
-
   .login-containerF {
     margin-top: 50px;
     width: 100%;
@@ -146,48 +146,12 @@
   }
 
   .linksF a {
-    font-size: 18px;
+    font-size: 23px;
   }
-
+  .formsF{
+    width: 70%;
+  }
   .confirmarF {
     width: 20%;
-  }
-}
-
-/* Ajuste para telas maiores */
-@media(min-width: 1200px) {
-  .login-containerF {
-    width: 50%;
-    padding: 50px; /* Adiciona espaçamento extra ao contêiner */
-  }
-
-  .loginF {
-    font-size: 80px; /* Aumenta o tamanho do título */
-    line-height: 90px;
-  }
-
-  .GrupoF {
-    width: 500px; /* Aumenta a largura do grupo */
-    gap: 30px; /* Espaçamento maior entre os elementos */
-  }
-
-  .formsF input {
-    font-size: 26px; /* Aumenta o tamanho do texto dos campos */
-    padding: 15px; /* Aumenta o padding dos campos */
-  }
-
-  .linksF a {
-    font-size: 28px; /* Aumenta o tamanho dos links */
-  }
-
-  .confirmarF {
-    
-    height: 60px; /* Altura do botão */
-  }
-  .Grupo2F{
-    justify-content: center;
-  }
-  .error-messageF{
-    font-size: 28px;
   }
 }

@@ -34,7 +34,7 @@
 .textP{
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     display: flex;
@@ -106,8 +106,8 @@
 
 @media(max-width:1024px){
     .textP {
-        font-size: 17px; /* Diminui o tamanho do texto */
-        line-height: 20px;
+        font-size: 16px; /* Diminui o tamanho do texto */
+        line-height: 18px;
     }
     
 
@@ -157,8 +157,8 @@
 
 @media (max-width: 480px) {
     .textP {
-        font-size: 14px; /* Texto ainda menor em dispositivos muito pequenos */
-        line-height: 18px;
+        font-size: 15px; /* Texto ainda menor em dispositivos muito pequenos */
+        line-height: 15px;
     }
 
     .texttP {
@@ -180,20 +180,21 @@
 }
 @media (min-width: 1024px) {
     .textP {
-      font-size: 25px;
-    
+        font-size: 20px;
+        line-height: 20px;
     }
   }
   
   @media (min-width: 1440px) {
     .textP {
-      font-size: 30px;
+      font-size: 28px;
+      line-height: 25px;
     }
   }
   
   @media (min-width: 1920px) {
     .textP {
-      font-size: 32px;
-      line-height: 30px;
+      font-size: 36px;
+      line-height: 35px;
     }
   }

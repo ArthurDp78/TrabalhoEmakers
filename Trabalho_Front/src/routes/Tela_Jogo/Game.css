@@ -17,11 +17,9 @@
   margin-top:7%;
   display: flex;
   flex-direction: row;
-  margin-bottom:7%;
+  flex:1;
 }
-
 .imggameG {
-  height: 100%;
   width: 100%;
   display: flex;
   align-items: flex-start; /* Ajusta o alinhamento */
@@ -31,8 +29,9 @@
 
 .godofwarG {
   width: 100%;
-  height:auto;/* Mantém a imagem estática */
+  height: 530px;
   z-index: 1; /* Define um z-index menor que os overlays */
+  object-fit:fill;
 }
 
 .percentG, .priceG {
@@ -47,8 +46,7 @@
   font-size: 16px;
   line-height: 20px;
   border-radius: 5px;
-  color: #FCFAFA;
-  background: #4B626C;
+  
 }
 
 .percentG {
@@ -56,6 +54,8 @@
   right:120px; /* Posiciona à esquerda */
   width: 50px; 
   height: 30px;
+  color: #FCFAFA;
+  background: #4B626C;
 }
 
 .priceG {
@@ -63,17 +63,19 @@
   right: 10px; /* Posiciona à direita */
   width: 100px; /* Ajusta o tamanho */
   height: 30px;
+  background: #FCFAFA;
+  color: #4B626C;
 }
 
 
 .imgrightG {
   width: 40%;
-  height:auto;
   background: #4B626C;
   border-radius: 0px 10px 10px 0px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  z-index: 1;
 
 }
 
@@ -86,34 +88,35 @@
   color: #FBF6F0;
   display: flex;
   justify-content: center;
+  margin-bottom: 0;
+  margin-top:10px;
 }
 
 .textboxG {
+  height: 100%;
   width: 100%;
-  height: 70%;
+  margin-top: 0;
 }
 
 .textpimgG {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 100%;
-  line-height: 25px;
-  text-align: center;
+  font-size: 19px;
+  line-height: 19px;
+  text-align:center;
   color: #FBF6F0;
 }
 
 .addG {
-  height: 5%;
-  width: 80%;
+  height: 30px;
+  width: 280px;
   background: #FCFAFA;
   border-radius: 5px;
-  margin-top: 15px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 16px;
   color: #4B626C;
   align-items: center;
   display: flex;
@@ -123,22 +126,21 @@
 
 
 .refundG {
-  opacity: 0.5;
-  height: 5%;
-  width: 80%;
+  height: 30px;
+  width: 280px;
   background: #FCFAFA;
   border-radius: 5px;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 20px;
+  font-weight: 600;
+  font-size: 16px;
   color: #4B626C;
   align-items: center;
   display: flex;
   justify-content: center;
   cursor: pointer;
 }
+
 @media (max-width: 768px) {
   .gameG {
     flex-direction: column; /* Imagem acima do conteúdo no modo mobile */
@@ -163,13 +165,17 @@
   }
 
   .textpimgG {
-    font-size: 14px; /* Reduz o tamanho do texto */
+    font-size: 20px; /* Reduz o tamanho do texto */
     line-height: 24px;
   }
   .addG, .refundG {
     width: 90%; /* Botões ocupam quase toda a largura */
-    font-size: 14px; /* Reduz o tamanho do texto */
+    font-size: 20px; /* Reduz o tamanho do texto */
     margin-top: 10px; /* Ajusta o espaçamento */
+  }
+  .godofwarG{
+    height: 400px;
+    width: 100%;
   }
 }
 @media (max-width: 468px) {
@@ -185,5 +191,12 @@
     height:30px;
     
   }
+  .godofwarG{
+    height: 200px;
+    width: 100%;
+  }
 }
+
+
+
 
